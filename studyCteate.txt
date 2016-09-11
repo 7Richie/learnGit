@@ -11,6 +11,6 @@ study002
 study003
 · git log 命令可以查看版本的历史纪录
 · git log --pretty=oneline 把历史纪录限制在一行输出
-· hard指向的是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
+· HEAD指向的是当前版本，HEAD^指向上一版本，HEAD^^指向上上版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
 · 穿梭前，可以用git log来查看提交历史，以便确定退回到哪个版本
 · 要重返未来的话，用git reflog查看命令历史，以便确定要回到未来哪个版本
