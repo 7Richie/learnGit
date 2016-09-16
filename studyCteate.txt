@@ -14,3 +14,7 @@ study003
 · HEAD指向的是当前版本，HEAD^指向上一版本，HEAD^^指向上上版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
 · 穿梭前，可以用git log来查看提交历史，以便确定退回到哪个版本
 · 要重返未来的话，用git reflog查看命令历史，以便确定要回到未来哪个版本
+
+study004
+· git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+· 如果不先用add加入到暂存区，就不会加入到commit
