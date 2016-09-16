@@ -18,3 +18,12 @@ study003
 study004
 · git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
 · 如果不先用add加入到暂存区，就不会加入到commit
+
+study005
+· Git工作区的撤销与修改：
+· 第一种情况：
+ 	 更改了工作区中某个文件的内容，想丢掉工作区的修改（即撤销）时，用命令git checkout -- filename
+· 第二种情况：
+	 更改了工作区中某个文件的内容，还用add命令添加到了暂存区，想撤销修改的话，先用命令git reset HEAD -- filename,使得这种情况变成了第一种情况，在使用git checkout -- filename
+· 第三种情况：
+· 	 就是不但用add命令添加到了暂存区，还用commit添加到了版本库，这时候只能采用版本回退的办法了。
