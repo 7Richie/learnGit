@@ -27,3 +27,7 @@ study005
 	 更改了工作区中某个文件的内容，还用add命令添加到了暂存区，想撤销修改的话，先用命令git reset HEAD -- filename,使得这种情况变成了第一种情况，在使用git checkout -- filename
 · 第三种情况：
 · 	 就是不但用add命令添加到了暂存区，还用commit添加到了版本库，这时候只能采用版本回退的办法了。
+
+study006
+· git rm用于删除文件，使用git rm filename然后使用git commit来删除版本库中的文件
+· 若删除了文件还没有提交到版本库中，则可以使用git checkout -- filename恢复误删的文件
